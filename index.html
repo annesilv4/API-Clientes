@@ -7,10 +7,34 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/style.css" />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>API Clientes</title>
   </head>
   <body>
-
+    <section id="container">
+      <form action="">
+        <input type="text" id="name" placeholder="Nome" />
+        <input type="email" id="email" placeholder="E-mail" />
+        <button id="btn-add">Adicionar Cliente</button>
+      </form>
+      <ul id="lista-clientes">
+        <li>
+          <span id="usuario">Usuário: Anne</span>
+          <span id="usuario-email"
+            >E-mail: carolaynebarbozasilva@gmail.com</span
+          >
+          <button id="btn-delete"><i class="fa-solid fa-minus"></i></button>
+        </li>
+      </ul>
+    </section>
     <!-- JS -->
     <script src="./JS/script.js"></script>
   </body>
