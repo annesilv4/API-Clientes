@@ -4,3 +4,153 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* BODY */
+body {
+  height: 90vh;
+  background-color: #c9c6c6;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2.5%;
+}
+
+/* FORM */
+#container {
+  width: 55%;
+  height: 35%;
+  background-color: #fefefe;
+  border-radius: 15px;
+  padding: 2% 6%;
+}
+
+#container h1 {
+  text-align: center;
+  font-size: 2.1rem;
+  margin-bottom: 3%;
+  color: #333;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2%;
+}
+
+/* INPUT'S NAME E EMAIL */
+input {
+  width: 65%;
+  height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  font-size: 1rem;
+  margin-bottom: 3%;
+}
+
+input:first-child {
+  margin-bottom: 2%;
+}
+
+/* BOTÃO DE ADICIONAR CLIENTE */
+#btn-add {
+  width: 65%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-add:hover {
+  background-color: #48794c;
+}
+
+/* LISTA DE CLIENTES */
+ul {
+  list-style-type: none;
+  width: 55%;
+  max-height: 60%;
+  background-color: #fefefe;
+  margin-top: 2.5%;
+  padding: 2% 6%;
+  border-radius: 15px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.item-clientes {
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 6%;
+  border: 1px solid #ccc;
+}
+
+/* INFOS CLIENTES {NOME E E-MAIL} */
+.info-clientes {
+  display: flex;
+  flex-direction: column;
+}
+
+.usuario {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.usuario-email {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* BOTÕES {EDITAR E EXCLUIR} */
+.btn-infos {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-editar,
+.btn-delete {
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-editar {
+  background-color: #4d7fa9;
+}
+
+.btn-editar i {
+    margin-right: 5px;
+}
+
+.btn-editar:hover {
+  background-color: #1976d2;
+}
+
+.btn-delete {
+  background-color: #e87168;
+}
+
+.btn-delete i {
+    margin-right: 5px;
+}
+
+.btn-delete:hover {
+  background-color: #d32f2f;
+}
