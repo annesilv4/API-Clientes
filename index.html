@@ -22,17 +22,28 @@
     <section id="container">
       <h1>Cadastrar Clientes</h1>
       <form action="">
-        <input type="text" id="name" placeholder="Nome" />
+        <input type="text" id="name" placeholder="Nome Completo" />
         <input type="email" id="email" placeholder="E-mail" />
         <button id="btn-add">Adicionar Cliente</button>
       </form>
     </section>
 
     <ul id="lista-clientes">
-      <li>
-        <span id="usuario">Usuário: Anne</span>
-        <span id="usuario-email">E-mail: carolaynebarbozasilva@gmail.com</span>
-        <button id="btn-delete"><i class="fa-solid fa-minus"></i></button>
+      <li class="item-clientes">
+        <div class="info-clientes">
+          <span id="usuario">Cliente: Anne Carolayne Barbosa da Silva</span>
+          <span id="usuario-email"
+            >E-mail: carolaynebarbozasilva@gmail.com</span
+          >
+        </div>
+        <div class="btn-infos">
+          <button id="btn-editar">
+            <i class="fa-solid fa-pen-to-square"></i>Editar
+          </button>
+          <button id="btn-delete">
+            <i class="fa-solid fa-minus"></i>Excluir
+          </button>
+        </div>
       </li>
     </ul>
     <!-- JS -->
