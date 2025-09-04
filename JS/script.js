@@ -11,11 +11,12 @@ fetch(API)
   .then((clientesCadastrados) => {
     clientesCadastrados.forEach((clientes) => {
       const itemClientes = document.createElement("li");
+      itemClientes.classList.add("item-clientes");
       itemClientes.innerHTML = `
       <div class="info-clientes">
           <span class="usuario">Cliente: ${clientes.nome}</span>
           <span class="usuario-email"
-            >E-mail: ${clientes.email}</span
+            >E-mail: ${clientes.mail}</span
           >
         </div>
         <div class="btn-infos">
@@ -43,17 +44,18 @@ document.getElementById("btn-add").addEventListener("click", () => {
     },
     body: JSON.stringify({
       nome: nameClientes,
-      email: emailClientes,
+      mail: emailClientes,
     }),
   })
     .then((response) => response.json())
     .then((clientes) => {
       const itemClientes = document.createElement("li");
+      itemClientes.classList.add("item-clientes");
       itemClientes.innerHTML = `
       <div class="info-clientes">
           <span class="usuario">Cliente: ${clientes.nome}</span>
           <span class="usuario-email"
-            >E-mail: ${clientes.email}</span
+            >E-mail: ${clientes.mail}</span
           >
         </div>
         <div class="btn-infos">
