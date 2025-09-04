@@ -29,7 +29,6 @@ fetch(API)
         </div>`;
       listaClientes.appendChild(itemClientes);
     });
-    addEventEdit();
   })
   .catch((erro) => console.error(erro));
 
