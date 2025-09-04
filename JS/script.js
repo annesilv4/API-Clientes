@@ -41,6 +41,18 @@ fetch(API)
         document.getElementById("btn-edit").style.display = "inline";
       });
 
+      const btnDelet = itemClientes.querySelector(".btn-delete");
+      btnDelet.addEventListener("click", () => {
+        fetch(`${API}/${clientes._id}`, {
+          method: "DELETE",
+        })
+          .then(() => {
+            listaClientes.removeChild(itemClientes);
+            console.log("Cliente excluido com sucesso!");
+          })
+          .catch((erro) => console.error("Erro ao excluir cliente", erro));
+      });
+
       listaClientes.appendChild(itemClientes);
     });
   })
@@ -91,7 +103,19 @@ document.getElementById("btn-add").addEventListener("click", () => {
         document.getElementById("btn-add").style.display = "none";
         document.getElementById("btn-edit").style.display = "inline";
       });
-      
+
+      const btnDelet = itemClientes.querySelector(".btn-delete");
+      btnDelet.addEventListener("click", () => {
+        fetch(`${API}/${clientes._id}`, {
+          method: "DELETE",
+        })
+          .then(() => {
+            listaClientes.removeChild(itemClientes);
+            console.log("Cliente excluido com sucesso!");
+          })
+          .catch((erro) => console.error("Erro ao excluir cliente", erro));
+      });
+
       listaClientes.appendChild(itemClientes);
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
