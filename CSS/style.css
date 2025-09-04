@@ -82,6 +82,7 @@ ul {
   border-radius: 15px;
   overflow-y: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -92,6 +93,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 2% 6%;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
 }
 
