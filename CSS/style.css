@@ -99,7 +99,7 @@ ul {
   padding: 2% 6%;
   border-radius: 15px;
   overflow-y: auto;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
 }

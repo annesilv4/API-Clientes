@@ -12,6 +12,7 @@ fetch(API)
   .then((response) => response.json())
   .then((clientesCadastrados) => {
     clientesCadastrados.forEach((clientes) => {
+      listaClientes.style.display = "flex";
       const itemClientes = document.createElement("li");
       itemClientes.classList.add("item-clientes");
       itemClientes.innerHTML = `
@@ -48,6 +49,12 @@ fetch(API)
         })
           .then(() => {
             listaClientes.removeChild(itemClientes);
+
+            // Verifica se ainda há clientes na lista
+            if (listaClientes.children.length === 0) {
+              listaClientes.style.display = "none"; // esconde a lista
+            }
+
             console.log("Cliente excluido com sucesso!");
           })
           .catch((erro) => console.error("Erro ao excluir cliente", erro));
@@ -75,6 +82,7 @@ document.getElementById("btn-add").addEventListener("click", () => {
   })
     .then((response) => response.json())
     .then((clientes) => {
+      listaClientes.style.display = "flex";
       const itemClientes = document.createElement("li");
       itemClientes.classList.add("item-clientes");
       itemClientes.innerHTML = `
@@ -111,6 +119,12 @@ document.getElementById("btn-add").addEventListener("click", () => {
         })
           .then(() => {
             listaClientes.removeChild(itemClientes);
+
+            // Verifica se ainda há clientes na lista
+            if (listaClientes.children.length === 0) {
+              listaClientes.style.display = "none"; // esconde a lista
+            }
+
             console.log("Cliente excluido com sucesso!");
           })
           .catch((erro) => console.error("Erro ao excluir cliente", erro));
