@@ -27,8 +27,9 @@ fetch(API)
             <i class="fa-solid fa-minus"></i>Excluir
           </button>
         </div>`;
-        listaClientes.appendChild(itemClientes);
+      listaClientes.appendChild(itemClientes);
     });
+    addEventEdit();
   })
   .catch((erro) => console.error(erro));
 
@@ -70,7 +71,5 @@ document.getElementById("btn-add").addEventListener("click", () => {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
     })
-    .catch(erro => console.error(erro));
+    .catch((erro) => console.error(erro));
 });
-
-
