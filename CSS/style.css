@@ -71,6 +71,24 @@ input:first-child {
   background-color: #48794c;
 }
 
+/* BOTÃO DE SALVAR ALTERAÇÕES DO CLIENTE */
+#btn-edit {
+  width: 65%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  display: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-edit:hover {
+  background-color: #48794c;
+}
+
 /* LISTA DE CLIENTES */
 ul {
   list-style-type: none;
